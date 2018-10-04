@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" id="8gr-BR-hMa" customClass="DiscoverSongCell" customModule="Anghamify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="364" height="407"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="364" height="407"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i3l-5v-3UE" userLabel="BackgroundView">
+                        <rect key="frame" x="0.0" y="0.0" width="364" height="407"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Bwe-wI-09G">
+                                <rect key="frame" x="8" y="8" width="348" height="391"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder song image" translatesAutoresizingMaskIntoConstraints="NO" id="i6K-1B-0JY">
+                                        <rect key="frame" x="35" y="0.0" width="278" height="278.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="i6K-1B-0JY" secondAttribute="height" multiplier="1:1" id="7is-Wx-Hdo"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="16"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PodcastName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ox8-j8-M8c">
+                                        <rect key="frame" x="117" y="314" width="114.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AuthorName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M3z-QO-fWL">
+                                        <rect key="frame" x="130.5" y="370.5" width="87" height="20.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBlack" family="Helvetica Neue" pointSize="17"/>
+                                        <color key="textColor" red="0.42352941179999998" green="0.42745098040000001" blue="0.79215686269999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="i6K-1B-0JY" firstAttribute="width" secondItem="Bwe-wI-09G" secondAttribute="width" multiplier="8:10" id="gOm-sT-8Em"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Bwe-wI-09G" secondAttribute="trailing" constant="8" id="1WO-em-PlW"/>
+                            <constraint firstAttribute="bottom" secondItem="Bwe-wI-09G" secondAttribute="bottom" constant="8" id="8aQ-KK-jFf"/>
+                            <constraint firstItem="Bwe-wI-09G" firstAttribute="leading" secondItem="i3l-5v-3UE" secondAttribute="leading" constant="8" id="Uqu-AA-C1N"/>
+                            <constraint firstItem="Bwe-wI-09G" firstAttribute="top" secondItem="i3l-5v-3UE" secondAttribute="top" constant="8" id="myC-zs-TIJ"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="6"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="i3l-5v-3UE" secondAttribute="trailing" id="46p-nk-r9R"/>
+                <constraint firstItem="i3l-5v-3UE" firstAttribute="top" secondItem="8gr-BR-hMa" secondAttribute="top" id="AZi-jz-DX7"/>
+                <constraint firstItem="i3l-5v-3UE" firstAttribute="leading" secondItem="8gr-BR-hMa" secondAttribute="leading" id="FUw-sc-AF7"/>
+                <constraint firstAttribute="bottom" secondItem="i3l-5v-3UE" secondAttribute="bottom" id="tGf-qO-6s8"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="bkc-kD-pgw"/>
+            <size key="customSize" width="364" height="407"/>
+            <userDefinedRuntimeAttributes>
+                <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                    <size key="value" width="0.0" height="3"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                    <real key="value" value="0.20000000000000001"/>
+                </userDefinedRuntimeAttribute>
+                <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                    <real key="value" value="8"/>
+                </userDefinedRuntimeAttribute>
+            </userDefinedRuntimeAttributes>
+            <connections>
+                <outlet property="artistNameLabel" destination="M3z-QO-fWL" id="Fda-7G-Gsd"/>
+                <outlet property="songImageView" destination="i6K-1B-0JY" id="Rtf-Od-wWL"/>
+                <outlet property="songNameLabel" destination="ox8-j8-M8c" id="bkB-Pt-qh6"/>
+            </connections>
+            <point key="canvasLocation" x="163.19999999999999" y="148.87556221889056"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder song image" width="512" height="512"/>
+    </resources>
+</document>

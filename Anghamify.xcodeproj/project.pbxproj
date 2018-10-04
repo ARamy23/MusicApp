@@ -1,0 +1,598 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		236CADB6648FD24D06BF6556 /* Pods_Anghamify.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 71A3D34A1B47A15F69A726CC /* Pods_Anghamify.framework */; };
+		E2041BE8215D6F49003E25C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041BE7215D6F49003E25C0 /* AppDelegate.swift */; };
+		E2041BED215D6F49003E25C0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2041BEB215D6F49003E25C0 /* Main.storyboard */; };
+		E2041BEF215D6F4A003E25C0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E2041BEE215D6F4A003E25C0 /* Assets.xcassets */; };
+		E2041BF2215D6F4A003E25C0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E2041BF0215D6F4A003E25C0 /* LaunchScreen.storyboard */; };
+		E2041BFD215D6F67003E25C0 /* SongsSearchCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2041BFA215D6F67003E25C0 /* SongsSearchCell.xib */; };
+		E2041BFE215D6F67003E25C0 /* SongsSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041BFB215D6F67003E25C0 /* SongsSearchVC.swift */; };
+		E2041BFF215D6F67003E25C0 /* SongsSearchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041BFC215D6F67003E25C0 /* SongsSearchCell.swift */; };
+		E2041C05215D6F6F003E25C0 /* ServerPaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C01215D6F6F003E25C0 /* ServerPaths.swift */; };
+		E2041C06215D6F6F003E25C0 /* SongService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C02215D6F6F003E25C0 /* SongService.swift */; };
+		E2041C0C215D7012003E25C0 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C0B215D7012003E25C0 /* MainTabBarController.swift */; };
+		E2041C14215D7048003E25C0 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C0E215D7048003E25C0 /* UIColor+Extension.swift */; };
+		E2041C15215D7048003E25C0 /* AVKit + CMTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C0F215D7048003E25C0 /* AVKit + CMTime.swift */; };
+		E2041C16215D7048003E25C0 /* Notification.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C10215D7048003E25C0 /* Notification.swift */; };
+		E2041C17215D7048003E25C0 /* UserDefaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C11215D7048003E25C0 /* UserDefaults.swift */; };
+		E2041C18215D7048003E25C0 /* UICollectionView+EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C12215D7048003E25C0 /* UICollectionView+EmptyState.swift */; };
+		E2041C19215D7048003E25C0 /* UIApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C13215D7048003E25C0 /* UIApplication.swift */; };
+		E2041C22215D7064003E25C0 /* SearchFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C1E215D7064003E25C0 /* SearchFeed.swift */; };
+		E2041C26215D7097003E25C0 /* PlayerDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E2041C24215D7097003E25C0 /* PlayerDetailsView.xib */; };
+		E2041C27215D7097003E25C0 /* PlayerDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C25215D7097003E25C0 /* PlayerDetailsView.swift */; };
+		E2041C29215D773B003E25C0 /* DiscoverFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C28215D773B003E25C0 /* DiscoverFeed.swift */; };
+		E2041C2B215D77A8003E25C0 /* DiscoverVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2041C2A215D77A8003E25C0 /* DiscoverVC.swift */; };
+		E29D9BE3215E4624000E6C15 /* DiscoverCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D9BE1215E4624000E6C15 /* DiscoverCollectionCell.swift */; };
+		E29D9BE4215E4624000E6C15 /* DiscoverCollectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29D9BE2215E4624000E6C15 /* DiscoverCollectionCell.xib */; };
+		E29D9BE7215E48D5000E6C15 /* DiscoverSongCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D9BE5215E48D5000E6C15 /* DiscoverSongCell.swift */; };
+		E29D9BE8215E48D5000E6C15 /* DiscoverSongCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E29D9BE6215E48D5000E6C15 /* DiscoverSongCell.xib */; };
+		E29D9BEC215E5544000E6C15 /* Song.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D9BEB215E5544000E6C15 /* Song.swift */; };
+		E29D9BF8215E77F0000E6C15 /* DownloadService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E29D9BF7215E77F0000E6C15 /* DownloadService.swift */; };
+		E2A0BF66215E9089002E0CF4 /* URL.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A0BF65215E9089002E0CF4 /* URL.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		71A3D34A1B47A15F69A726CC /* Pods_Anghamify.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Anghamify.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9F0FBF06A56236835F2ACF8F /* Pods-Anghamify.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anghamify.release.xcconfig"; path = "Pods/Target Support Files/Pods-Anghamify/Pods-Anghamify.release.xcconfig"; sourceTree = "<group>"; };
+		BF73D2350DB54FE9A6957FA4 /* Pods-Anghamify.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Anghamify.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Anghamify/Pods-Anghamify.debug.xcconfig"; sourceTree = "<group>"; };
+		E2041BE4215D6F49003E25C0 /* Anghamify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Anghamify.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E2041BE7215D6F49003E25C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E2041BEC215D6F49003E25C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E2041BEE215D6F4A003E25C0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E2041BF1215D6F4A003E25C0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E2041BF3215D6F4A003E25C0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E2041BFA215D6F67003E25C0 /* SongsSearchCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SongsSearchCell.xib; sourceTree = "<group>"; };
+		E2041BFB215D6F67003E25C0 /* SongsSearchVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsSearchVC.swift; sourceTree = "<group>"; };
+		E2041BFC215D6F67003E25C0 /* SongsSearchCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongsSearchCell.swift; sourceTree = "<group>"; };
+		E2041C01215D6F6F003E25C0 /* ServerPaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ServerPaths.swift; sourceTree = "<group>"; };
+		E2041C02215D6F6F003E25C0 /* SongService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SongService.swift; sourceTree = "<group>"; };
+		E2041C0B215D7012003E25C0 /* MainTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		E2041C0E215D7048003E25C0 /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		E2041C0F215D7048003E25C0 /* AVKit + CMTime.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AVKit + CMTime.swift"; sourceTree = "<group>"; };
+		E2041C10215D7048003E25C0 /* Notification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notification.swift; sourceTree = "<group>"; };
+		E2041C11215D7048003E25C0 /* UserDefaults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaults.swift; sourceTree = "<group>"; };
+		E2041C12215D7048003E25C0 /* UICollectionView+EmptyState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UICollectionView+EmptyState.swift"; sourceTree = "<group>"; };
+		E2041C13215D7048003E25C0 /* UIApplication.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIApplication.swift; sourceTree = "<group>"; };
+		E2041C1E215D7064003E25C0 /* SearchFeed.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFeed.swift; sourceTree = "<group>"; };
+		E2041C24215D7097003E25C0 /* PlayerDetailsView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PlayerDetailsView.xib; sourceTree = "<group>"; };
+		E2041C25215D7097003E25C0 /* PlayerDetailsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsView.swift; sourceTree = "<group>"; };
+		E2041C28215D773B003E25C0 /* DiscoverFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverFeed.swift; sourceTree = "<group>"; };
+		E2041C2A215D77A8003E25C0 /* DiscoverVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverVC.swift; sourceTree = "<group>"; };
+		E29D9BE1215E4624000E6C15 /* DiscoverCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverCollectionCell.swift; sourceTree = "<group>"; };
+		E29D9BE2215E4624000E6C15 /* DiscoverCollectionCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverCollectionCell.xib; sourceTree = "<group>"; };
+		E29D9BE5215E48D5000E6C15 /* DiscoverSongCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverSongCell.swift; sourceTree = "<group>"; };
+		E29D9BE6215E48D5000E6C15 /* DiscoverSongCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DiscoverSongCell.xib; sourceTree = "<group>"; };
+		E29D9BEB215E5544000E6C15 /* Song.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Song.swift; sourceTree = "<group>"; };
+		E29D9BF7215E77F0000E6C15 /* DownloadService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DownloadService.swift; sourceTree = "<group>"; };
+		E2A0BF65215E9089002E0CF4 /* URL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URL.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E2041BE1215D6F49003E25C0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				236CADB6648FD24D06BF6556 /* Pods_Anghamify.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		86A7E4DEBD96E6DF1B43A8A7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				71A3D34A1B47A15F69A726CC /* Pods_Anghamify.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E2041BDB215D6F49003E25C0 = {
+			isa = PBXGroup;
+			children = (
+				E2041BE6215D6F49003E25C0 /* Anghamify */,
+				E2041BE5215D6F49003E25C0 /* Products */,
+				EDEA9716151CDC664747C0E0 /* Pods */,
+				86A7E4DEBD96E6DF1B43A8A7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E2041BE5215D6F49003E25C0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E2041BE4215D6F49003E25C0 /* Anghamify.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E2041BE6215D6F49003E25C0 /* Anghamify */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C1A215D7064003E25C0 /* Models */,
+				E2041C0A215D7012003E25C0 /* Main TabBar */,
+				E2041C23215D7097003E25C0 /* Song Player */,
+				E2041BF9215D6F67003E25C0 /* Songs Search */,
+				E2041C2C215D77AD003E25C0 /* Discover */,
+				E2041C0D215D7048003E25C0 /* Extensions */,
+				E2041C00215D6F6F003E25C0 /* Network */,
+				E2041C09215D6FA6003E25C0 /* Supporting Files */,
+				E2041BF3215D6F4A003E25C0 /* Info.plist */,
+			);
+			path = Anghamify;
+			sourceTree = "<group>";
+		};
+		E2041BF9215D6F67003E25C0 /* Songs Search */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C2D215D79D2003E25C0 /* Cell */,
+				E2041BFB215D6F67003E25C0 /* SongsSearchVC.swift */,
+			);
+			path = "Songs Search";
+			sourceTree = "<group>";
+		};
+		E2041C00215D6F6F003E25C0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C01215D6F6F003E25C0 /* ServerPaths.swift */,
+				E2041C02215D6F6F003E25C0 /* SongService.swift */,
+				E29D9BF7215E77F0000E6C15 /* DownloadService.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		E2041C09215D6FA6003E25C0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E2041BE7215D6F49003E25C0 /* AppDelegate.swift */,
+				E2041BEB215D6F49003E25C0 /* Main.storyboard */,
+				E2041BEE215D6F4A003E25C0 /* Assets.xcassets */,
+				E2041BF0215D6F4A003E25C0 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E2041C0A215D7012003E25C0 /* Main TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C0B215D7012003E25C0 /* MainTabBarController.swift */,
+			);
+			path = "Main TabBar";
+			sourceTree = "<group>";
+		};
+		E2041C0D215D7048003E25C0 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C0E215D7048003E25C0 /* UIColor+Extension.swift */,
+				E2041C0F215D7048003E25C0 /* AVKit + CMTime.swift */,
+				E2041C10215D7048003E25C0 /* Notification.swift */,
+				E2041C11215D7048003E25C0 /* UserDefaults.swift */,
+				E2041C12215D7048003E25C0 /* UICollectionView+EmptyState.swift */,
+				E2041C13215D7048003E25C0 /* UIApplication.swift */,
+				E2A0BF65215E9089002E0CF4 /* URL.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E2041C1A215D7064003E25C0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C1E215D7064003E25C0 /* SearchFeed.swift */,
+				E2041C28215D773B003E25C0 /* DiscoverFeed.swift */,
+				E29D9BEB215E5544000E6C15 /* Song.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		E2041C23215D7097003E25C0 /* Song Player */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C24215D7097003E25C0 /* PlayerDetailsView.xib */,
+				E2041C25215D7097003E25C0 /* PlayerDetailsView.swift */,
+			);
+			path = "Song Player";
+			sourceTree = "<group>";
+		};
+		E2041C2C215D77AD003E25C0 /* Discover */ = {
+			isa = PBXGroup;
+			children = (
+				E2041C2A215D77A8003E25C0 /* DiscoverVC.swift */,
+				E29D9BEA215E4B71000E6C15 /* Discover Section */,
+				E29D9BE9215E4B6E000E6C15 /* DiscoveredSongCell */,
+			);
+			path = Discover;
+			sourceTree = "<group>";
+		};
+		E2041C2D215D79D2003E25C0 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E2041BFA215D6F67003E25C0 /* SongsSearchCell.xib */,
+				E2041BFC215D6F67003E25C0 /* SongsSearchCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		E29D9BE9215E4B6E000E6C15 /* DiscoveredSongCell */ = {
+			isa = PBXGroup;
+			children = (
+				E29D9BE5215E48D5000E6C15 /* DiscoverSongCell.swift */,
+				E29D9BE6215E48D5000E6C15 /* DiscoverSongCell.xib */,
+			);
+			path = DiscoveredSongCell;
+			sourceTree = "<group>";
+		};
+		E29D9BEA215E4B71000E6C15 /* Discover Section */ = {
+			isa = PBXGroup;
+			children = (
+				E29D9BE1215E4624000E6C15 /* DiscoverCollectionCell.swift */,
+				E29D9BE2215E4624000E6C15 /* DiscoverCollectionCell.xib */,
+			);
+			path = "Discover Section";
+			sourceTree = "<group>";
+		};
+		EDEA9716151CDC664747C0E0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BF73D2350DB54FE9A6957FA4 /* Pods-Anghamify.debug.xcconfig */,
+				9F0FBF06A56236835F2ACF8F /* Pods-Anghamify.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E2041BE3215D6F49003E25C0 /* Anghamify */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E2041BF6215D6F4A003E25C0 /* Build configuration list for PBXNativeTarget "Anghamify" */;
+			buildPhases = (
+				0C252323781B007E587BFFA7 /* [CP] Check Pods Manifest.lock */,
+				E2041BE0215D6F49003E25C0 /* Sources */,
+				E2041BE1215D6F49003E25C0 /* Frameworks */,
+				E2041BE2215D6F49003E25C0 /* Resources */,
+				EE019BC67CBC6578645A0C73 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Anghamify;
+			productName = Anghamify;
+			productReference = E2041BE4215D6F49003E25C0 /* Anghamify.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E2041BDC215D6F49003E25C0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1000;
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = ScaRiLiX;
+				TargetAttributes = {
+					E2041BE3215D6F49003E25C0 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = E2041BDF215D6F49003E25C0 /* Build configuration list for PBXProject "Anghamify" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E2041BDB215D6F49003E25C0;
+			productRefGroup = E2041BE5215D6F49003E25C0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E2041BE3215D6F49003E25C0 /* Anghamify */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E2041BE2215D6F49003E25C0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29D9BE4215E4624000E6C15 /* DiscoverCollectionCell.xib in Resources */,
+				E2041BFD215D6F67003E25C0 /* SongsSearchCell.xib in Resources */,
+				E2041C26215D7097003E25C0 /* PlayerDetailsView.xib in Resources */,
+				E2041BF2215D6F4A003E25C0 /* LaunchScreen.storyboard in Resources */,
+				E2041BEF215D6F4A003E25C0 /* Assets.xcassets in Resources */,
+				E29D9BE8215E48D5000E6C15 /* DiscoverSongCell.xib in Resources */,
+				E2041BED215D6F49003E25C0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0C252323781B007E587BFFA7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Anghamify-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EE019BC67CBC6578645A0C73 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Anghamify/Pods-Anghamify-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Anghamify/Pods-Anghamify-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E2041BE0215D6F49003E25C0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E29D9BE3215E4624000E6C15 /* DiscoverCollectionCell.swift in Sources */,
+				E2041C29215D773B003E25C0 /* DiscoverFeed.swift in Sources */,
+				E2041C27215D7097003E25C0 /* PlayerDetailsView.swift in Sources */,
+				E2041C19215D7048003E25C0 /* UIApplication.swift in Sources */,
+				E29D9BEC215E5544000E6C15 /* Song.swift in Sources */,
+				E29D9BF8215E77F0000E6C15 /* DownloadService.swift in Sources */,
+				E2041C15215D7048003E25C0 /* AVKit + CMTime.swift in Sources */,
+				E2041C2B215D77A8003E25C0 /* DiscoverVC.swift in Sources */,
+				E2041C14215D7048003E25C0 /* UIColor+Extension.swift in Sources */,
+				E2041C18215D7048003E25C0 /* UICollectionView+EmptyState.swift in Sources */,
+				E2041C16215D7048003E25C0 /* Notification.swift in Sources */,
+				E2041C22215D7064003E25C0 /* SearchFeed.swift in Sources */,
+				E2041BFF215D6F67003E25C0 /* SongsSearchCell.swift in Sources */,
+				E2041C06215D6F6F003E25C0 /* SongService.swift in Sources */,
+				E2041C0C215D7012003E25C0 /* MainTabBarController.swift in Sources */,
+				E2041C17215D7048003E25C0 /* UserDefaults.swift in Sources */,
+				E29D9BE7215E48D5000E6C15 /* DiscoverSongCell.swift in Sources */,
+				E2A0BF66215E9089002E0CF4 /* URL.swift in Sources */,
+				E2041C05215D6F6F003E25C0 /* ServerPaths.swift in Sources */,
+				E2041BFE215D6F67003E25C0 /* SongsSearchVC.swift in Sources */,
+				E2041BE8215D6F49003E25C0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		E2041BEB215D6F49003E25C0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2041BEC215D6F49003E25C0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E2041BF0215D6F4A003E25C0 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E2041BF1215D6F4A003E25C0 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E2041BF4215D6F4A003E25C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E2041BF5215D6F4A003E25C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E2041BF7215D6F4A003E25C0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF73D2350DB54FE9A6957FA4 /* Pods-Anghamify.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = Anghamify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ScaRiLiX.Anghamify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E2041BF8215D6F4A003E25C0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9F0FBF06A56236835F2ACF8F /* Pods-Anghamify.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 969Y6REAB6;
+				INFOPLIST_FILE = Anghamify/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ScaRiLiX.Anghamify;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E2041BDF215D6F49003E25C0 /* Build configuration list for PBXProject "Anghamify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2041BF4215D6F4A003E25C0 /* Debug */,
+				E2041BF5215D6F4A003E25C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E2041BF6215D6F4A003E25C0 /* Build configuration list for PBXNativeTarget "Anghamify" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E2041BF7215D6F4A003E25C0 /* Debug */,
+				E2041BF8215D6F4A003E25C0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E2041BDC215D6F49003E25C0 /* Project object */;
+}

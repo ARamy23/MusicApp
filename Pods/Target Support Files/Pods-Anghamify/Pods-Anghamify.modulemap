@@ -1,0 +1,6 @@
+framework module Pods_Anghamify {
+  umbrella header "Pods-Anghamify-umbrella.h"
+
+  export *
+  module * { export * }
+}

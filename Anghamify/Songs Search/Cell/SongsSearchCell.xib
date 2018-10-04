@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="260" id="H49-nO-lGN" userLabel="SongsSearchCell" customClass="SongsSearchCell" customModule="Anghamify" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="389" height="260"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="H49-nO-lGN" id="PjO-Xg-EU9">
+                <rect key="frame" x="0.0" y="0.0" width="389" height="259.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h6A-uY-hrt" userLabel="Background">
+                        <rect key="frame" x="20" y="11" width="349" height="218.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder song image" translatesAutoresizingMaskIntoConstraints="NO" id="vFy-Tq-dFU">
+                                <rect key="frame" x="8" y="59.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="iiA-dn-2WR"/>
+                                    <constraint firstAttribute="height" constant="100" id="yfH-2Y-oWG"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="QlU-Wb-WTz">
+                                <rect key="frame" x="120" y="84.5" width="221" height="54.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SongName" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="i4I-zY-8w5">
+                                        <rect key="frame" x="0.0" y="0.0" width="221" height="28.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-CondensedBold" family="Helvetica Neue" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ArtistName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MHn-fS-cXj">
+                                        <rect key="frame" x="0.0" y="30.5" width="221" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="QlU-Wb-WTz" firstAttribute="leading" secondItem="vFy-Tq-dFU" secondAttribute="trailing" constant="12" id="AOh-gG-LZN"/>
+                            <constraint firstItem="vFy-Tq-dFU" firstAttribute="leading" secondItem="h6A-uY-hrt" secondAttribute="leadingMargin" id="JjE-SU-MKP"/>
+                            <constraint firstItem="QlU-Wb-WTz" firstAttribute="centerY" secondItem="h6A-uY-hrt" secondAttribute="centerY" constant="2.25" id="LZl-5L-bpn"/>
+                            <constraint firstItem="vFy-Tq-dFU" firstAttribute="centerY" secondItem="h6A-uY-hrt" secondAttribute="centerY" id="Zam-ab-qPA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="QlU-Wb-WTz" secondAttribute="trailing" id="fqa-9N-Ipy"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="16"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="0.0" height="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.20000000000000001"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2pY-SG-oc2">
+                        <rect key="frame" x="0.0" y="229.5" width="389" height="30"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="30" id="Znh-NU-QKC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2pY-SG-oc2" secondAttribute="bottom" id="53X-hc-T3t"/>
+                    <constraint firstItem="h6A-uY-hrt" firstAttribute="leading" secondItem="PjO-Xg-EU9" secondAttribute="leadingMargin" id="Hc6-bs-Lgq"/>
+                    <constraint firstItem="h6A-uY-hrt" firstAttribute="trailing" secondItem="PjO-Xg-EU9" secondAttribute="trailingMargin" id="Inl-Zb-h56"/>
+                    <constraint firstItem="2pY-SG-oc2" firstAttribute="top" secondItem="h6A-uY-hrt" secondAttribute="bottom" id="Zev-6b-EYU"/>
+                    <constraint firstItem="h6A-uY-hrt" firstAttribute="top" secondItem="PjO-Xg-EU9" secondAttribute="topMargin" id="gMt-iM-766"/>
+                    <constraint firstItem="2pY-SG-oc2" firstAttribute="leading" secondItem="PjO-Xg-EU9" secondAttribute="leading" id="pT8-NP-XdF"/>
+                    <constraint firstAttribute="trailing" secondItem="2pY-SG-oc2" secondAttribute="trailing" id="ya4-NI-pgh"/>
+                </constraints>
+                <userDefinedRuntimeAttributes>
+                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                        <color key="value" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                        <size key="value" width="0.0" height="3"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                        <real key="value" value="0.20000000000000001"/>
+                    </userDefinedRuntimeAttribute>
+                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                        <real key="value" value="8"/>
+                    </userDefinedRuntimeAttribute>
+                </userDefinedRuntimeAttributes>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="XX7-1a-bpH"/>
+            <connections>
+                <outlet property="songArtistNameLabel" destination="MHn-fS-cXj" id="3ZE-ag-Chz"/>
+                <outlet property="songImageView" destination="vFy-Tq-dFU" id="wgV-17-jEQ"/>
+                <outlet property="songNameLabel" destination="i4I-zY-8w5" id="asI-He-umq"/>
+            </connections>
+            <point key="canvasLocation" x="130.40000000000001" y="177.21139430284859"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder song image" width="512" height="512"/>
+    </resources>
+</document>
